@@ -1,4 +1,4 @@
-html,
+/* html,
 body,
 div,
 span,
@@ -415,8 +415,8 @@ button {
 }
 #page {
   overflow-x: visible;
-}
-table {
+} */
+/* table {
   border: 1px solid #dae0e0;
 }
 tr.column > th {
@@ -458,7 +458,7 @@ table.table > * > tr > th:first-child {
   tr:last-of-type {
     border-bottom: 0;
   }
-}
+} */
 .dialog form table select,
 .dialog form table input,
 .dialog form table textarea {
@@ -582,7 +582,7 @@ table.table > * > tr > th:first-child {
   font-weight: 300;
   color: #202020;
 }
-h3 {
+/* h3 {
   font-size: 3.6rem;
   line-height: 1;
   font-family: "anziano", serif;
@@ -590,7 +590,7 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.1rem;
   margin-bottom: 1.6rem;
-}
+} */
 .o-container-fluid {
   width: 100%;
   margin-left: auto;
@@ -2335,7 +2335,7 @@ a.cta-form-button:hover,
   background: #fcfcfc !important;
   border-color: #202020;
 }
-form {
+/* form {
   margin: 2.4rem 0 0;
 }
 select,
@@ -2356,7 +2356,7 @@ select {
   height: 5.6rem;
   padding: 0.4rem 2.4rem 0;
   background: none;
-}
+} */
 .form-element select,
 .form-element input,
 .form-element textarea {
