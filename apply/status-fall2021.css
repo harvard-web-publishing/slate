@@ -405,7 +405,8 @@ select {
   background: none;
 }
 /* UTILITY CLASSES (buttons, bands. etc.) */
-.u-action-button a,
+.u-action-button a:link,
+.u-action-button a:visited,
 .u-action-button td a:link, 
 .u-action-button td a:visited{
   background: #e9f0f7;
