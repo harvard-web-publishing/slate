@@ -2951,7 +2951,7 @@ button.status-tabs__button.is-active-tab {
   outline-offset: 0;
   outline-color: #dae0e0;
 }
-.panel-anchors {
+/* .panel-anchors {
   background-color: #fcfcfc;
   font-size: 1.6rem;
 }
@@ -3081,7 +3081,7 @@ button.status-tabs__button.is-active-tab {
     opacity: 1;
     left: 1rem;
   }
-}
+} */
 .status-header {
   padding: 2.4rem 0 1.6rem;
 }
@@ -4032,7 +4032,7 @@ ul.alt-list-style li + li {
     padding: 0;
   }
 }
-.u-sr-only,
+/* .u-sr-only,
 .visually-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -4040,7 +4040,7 @@ ul.alt-list-style li + li {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
+} */
 .u-keyboard-user .u-focusable:focus {
   clip: auto;
   height: auto;
