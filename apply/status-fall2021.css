@@ -407,8 +407,8 @@ select {
 /* UTILITY CLASSES (buttons, bands. etc.) */
 .u-action-button a:link,
 .u-action-button a:visited,
-.u-action-button td a:link, 
-.u-action-button td a:visited{
+.u-action-button td a:link,
+.u-action-button td a:visited {
   background: #e9f0f7;
   color: #2b669f;
   border: 1px solid transparent;
@@ -426,7 +426,6 @@ select {
   background-color: transparent;
   border-color: #2b669f;
 }
-
 
 /* GLOBALS - applicant status portal wide rules, including landmarks */
 
@@ -540,14 +539,87 @@ select {
 #page {
   overflow-x: visible;
 }
+
+/*subtabs panel container*/
+
+.part_rows_container > div.part {
+  margin-bottom: 0px;
+}
+
+#content_body {
+  background-color: #f7f6f5;
+}
+
+#portal_row_container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 144rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+}
+
+@media only screen and (min-width: 760px) {
+  #portal_row_container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+#portal_row_container .part_rows_container.col-1 {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+@media only screen and (min-width: 970px) {
+  #portal_row_container .part_rows_container.col-1 {
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+#portal_row_container .part_rows_container.col-2 {
+  margin-bottom: 3.2rem;
+}
+@media only screen and (min-width: 970px) {
+  #portal_row_container .part_rows_container.col-2 {
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #portal_row_container .grid_container.col-3-9 > div:nth-of-type(2) {
+    grid-column-start: 5;
+  }
+}
+
 /* TAB SPECIFIC RULES */
 
-ul.subtabs {
-  border-top: 1px solid #dae0e0;
+.subtabs--container {
   border-bottom: 1px solid #dae0e0;
+}
+
+ul.subtabs {
   background-color: #fff;
   height: auto;
+  margin-bottom: 0px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 144rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
 }
+
+@media only screen and (min-width: 760px) {
+  ul.subtabs {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 #content ul.subtabs li a {
   background-color: transparent;
   border: none;
@@ -718,9 +790,6 @@ ul.subtabs {
   }
 }
 /* BLOCK SPECIFIC RULES */
-
-
-
 
 /* MAIN CONTENT COLUMN - BLOCKS */
 
