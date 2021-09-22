@@ -591,6 +591,8 @@ table.table > * > tr > th:first-child {
   letter-spacing: -0.1rem;
   margin-bottom: 1.6rem;
 } */
+
+
 .o-container-fluid {
   width: 100%;
   margin-left: auto;
@@ -605,6 +607,8 @@ table.table > * > tr > th:first-child {
     padding-right: 3rem;
   }
 }
+
+
 .o-container {
   width: 90%;
   margin-left: auto;
@@ -3241,7 +3245,7 @@ a.status-header__logout:hover:after {
 .status-panel {
   position: relative;
 }
-.status-panel__sidebar {
+/* .status-panel__sidebar {
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
 }
@@ -3250,8 +3254,8 @@ a.status-header__logout:hover:after {
     margin-top: 4.8rem;
     margin-bottom: 4.8rem;
   }
-}
-.status-panel__content {
+} */
+/* .status-panel__content {
   margin-bottom: 3.2rem;
 }
 @media only screen and (min-width: 970px) {
@@ -3259,7 +3263,7 @@ a.status-header__logout:hover:after {
     margin-top: 4.8rem;
     margin-bottom: 4.8rem;
   }
-}
+} */
 @media only screen and (min-width: 970px) {
   .status-panel__sidebar-inner {
     position: -webkit-sticky;

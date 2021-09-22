@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+    <script></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="subtabs--container">
+      <ul class="subtabs">
+        {% if decision_released == 1 %}
+        <li>
+          <a data-tab="admission" href="#">Admissions Status</a>
+        </li>
+        {% endif %}
+
+        <li>
+          <a data-tab="application" href="#">Application Information</a>
+        </li>
+        <li>
+          <a data-tab="profile" href="#">Profile</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content_body"></div>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      var loadTab = function (tab, isBack) {
+        if (!isBack) history.pushState(tab, null, "?tab=" + tab);
+        $("a[data-tab]").removeClass("active");
+        $("a[data-tab='" + tab + "']").addClass("active");
+        FW.Lazy.Fetch("?cmd=" + tab, $("#content_body"));
+      };
+
+      window.addEventListener("popstate", function (e) {
+        if (e.state) loadTab(e.state, true);
+        else history.back();
+      });
+
+      $("a[data-tab]").on("click", function () {
+        loadTab($(this).data("tab"));
+        return false;
+      });
+
+      var qs = FW.decodeFormValues(location.search.substring(1));
+      if (qs["tab"]) loadTab(qs["tab"]);
+      else {
+        var default_tab = $("ul.subtabs").find("li > a").eq(0).data("tab");
+        loadTab(default_tab);
+      }
+      /*]]>*/
+    </script>
+  </body>
+</html>
