@@ -401,6 +401,16 @@ button.part--action-button,
 	-webkit-transition: all 0.2s cubic-bezier(0.25, 0, 0.5, 1), outline 0s, outline-offset 0s;
 	transition: all 0.2s cubic-bezier(0.25, 0, 0.5, 1), outline 0s, outline-offset 0s;
 }
+@media only screen and (max-width: 479px) {
+	button.part--action-button,
+	.part--action-button a:link,
+	.part--action-button a:visited,
+	.part--action-button td a:link,
+	.part--action-button td a:visited,
+	.part--action-button a.cta-form-button {
+		display: block;
+	}
+}
 button.part--action-button:hover,
 .part--action-button td a:hover,
 .part--action-button a:hover,
@@ -784,8 +794,12 @@ li.subtabs__item--profiles a {
 	}
 }
 @media only screen and (max-width: 479px) {
-	ul.subtabs li {
-		display: block;
+	#content ul.subtabs li.subtabs__item--help-modal-link a {
+		margin: 7px 25px 14px 0
+	}
+	#content ul.subtabs li a {
+		padding: 20px 15px 30px 28px;
+		font-size: 1.14rem;
 	}
 }
 /** subtabs fixed styles **/
@@ -811,7 +825,7 @@ li.subtabs__item--profiles a {
 @media only screen and (min-width: 479px) {
 	#subtabs--container.fixed .subtabs__shield {
 		display: block;
-		margin-left: 40px;
+		margin-left: auto;
 		padding-right: 20px;
 	}
 }
