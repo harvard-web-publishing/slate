@@ -212,10 +212,7 @@ body {
 		font-size: 2rem;
 	}
 }
-body *:focus {
-	outline: 0.2rem solid #2b669f;
-	outline-offset: 0.5rem;
-}
+
 body.u-keyboard-user *:focus {
 	outline: 0.2rem solid #2b669f;
 	outline-offset: 0.5rem;
@@ -430,6 +427,10 @@ button.part--action-button:hover,
 /* GLOBALS - applicant status portal wide rules, including landmarks */
 
 /* college header */
+
+.c_m-site-header__inner a:focus {
+    margin: 10px 0 15px;
+}
 
 .c_m-site-header.cr {
 	background-color: #424040;
@@ -1057,6 +1058,20 @@ MAIN CONTENT COLUMN - BLOCKS
 	height: 3.1rem;
 	top: 0.1rem;
 	left: -5.2rem;
+}
+.col-2 .part--website_icon h3:before {
+    background-image: url("https://apply.college.harvard.edu/images/website.svg");
+    width: 4rem;
+    height: 3.4rem;
+    top: 0.1rem;
+    left: -5.2rem;
+}
+.col-2 .part--id-card_icon h3:before {
+    background-image: url("https://apply.college.harvard.edu/images/id-card.svg");
+    width: 4rem;
+    height: 3.4rem;
+    top: 0.1rem;
+    left: -5.2rem;
 }
 /*** 
 UPLOAD BLOCK FORM ELEMENTS, BUTTONS, ETC.
